@@ -1,28 +1,20 @@
-- Getting started
+- Start
+  - [Installation](en/start/install.md)
 
-  - [Quick start](quickstart.md)
-  - [Writing more pages](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
-  - [Cover page](cover.md)
+- Simple API
+  - [Authentification](en/simpleapi/auth.md)
+  - [Phone](en/simpleapi/phone.md)
+  - [Phone Events](en/simpleapi/phoneEvents.md)
+  - [Room](en/simpleapi/room.md)
+  - [Room Events](en/simpleapi/roomEvents.md)
+  - [Websocket](en/simpleapi/websocket.md)
 
-- Customization
-
-  - [Configuration](configuration.md)
-  - [Themes](themes.md)
-  - [List of Plugins](plugins.md)
-  - [Write a Plugin](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
-  - [Language highlighting](language-highlight.md)
-  - [Emoji](emoji.md)
-
-- Guide
-
-  - [Deploy](deploy.md)
-  - [Helpers](helpers.md)
-  - [Vue compatibility](vue.md)
-  - [CDN](cdn.md)
-  - [Offline Mode (PWA)](pwa.md)
-  - [Embed Files](embed-files.md)
-
-- [Awesome docsify](awesome.md)
-- [Changelog](changelog.md)
+- API
+  - [Agentd](en/api/agentd.md)
+  - [Application](en/api/application.md)
+  - [Auth](en/api/auth.md)
+  - [Calld](en/api/calld.md)
+  - [CallLogd](en/api/calllogd.md)
+  - [Chatd](en/api/chatd.md)
+  - [Confd](en/api/confd.md)
+  - [Dird](en/api/dird.md)

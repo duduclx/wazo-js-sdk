@@ -22,12 +22,26 @@
       mergeNavbar: true,
       maxLevel: 3,
       subMaxLevel: 3,
+      copyCode: {
+        buttonText: {
+          '/fr/': 'Copier',
+          '/en/': 'Copy to clipboard',
+        },
+        errorText: {
+          '/fr/': 'Erreur',
+          '/en/': 'Error',
+        },
+        successText: {
+          '/fr/': 'Copié',
+          '/en/': 'Copied',
+        },
+      },
       tabs: {
-        persist    : true,      // default
-        sync       : false,      // default
-        theme      : 'classic', // default
-        tabComments: true,      // default
-        tabHeadings: true       // default
+        persist    : true,
+        sync       : false,
+        theme      : 'classic',
+        tabComments: true,
+        tabHeadings: true
       },
       search: 'auto',
       search: {
@@ -37,7 +51,7 @@
         placeholder: {
           '/': 'Type to search',
           '/en/': 'Type to search',
-          '/fr': 'Rechercher',
+          '/fr/': 'Rechercher',
         },
         // Localization
         noData: {
@@ -56,6 +70,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
 </body>
 </html>

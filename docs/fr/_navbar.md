@@ -1,6 +1,4 @@
-* Traductions
-
-    * [Français](fr/index.md)
+* Langues
     * [English](en/index.md)
-
+* [Bienvenue](/fr/index.md)
 * [Accueil](/)

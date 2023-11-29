@@ -1,6 +1,4 @@
 * Languages
-
     * [Français](fr/index.md)
-    * [English](en/index.md)
-
+* [Welcome](/en/index.md)
 * [Home](/)
