@@ -1,4 +1,4 @@
-# Bienvenue
+# Bienvenue :bird:
 
 Pour faciliter l'usage et la compréhension de la documentation, un projet de `context React` est disponible:
 

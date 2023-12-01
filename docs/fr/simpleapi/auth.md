@@ -354,7 +354,7 @@ const session = await Wazo.Auth.validateToken(token, refreshToken);
 - `token`: string  
 le token de l'utilisateur a valider (eg: vérifie que le token est valide et non expiré).
   
-- `refreshToken`: string (optional)  
+- `refreshToken`: string (optionel)  
 le refresh token de l'utilisateur, utilisé pour générer un nouveau token si le token est expiré.
 
 #### **Réponse**
@@ -390,7 +390,7 @@ Wazo.Auth.setOnRefreshToken(token => { /* Do something with the new token */ });
 
 #### **Paramètres**
 
-- `callback`: Function(token: string)  
+- `callback`: Function (token: string)  
 Une fonction appelée lorsque le token de l'utilisateur va bientôt expirer.
 
 #### **Réponse**
