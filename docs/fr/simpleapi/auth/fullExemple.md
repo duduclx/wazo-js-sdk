@@ -171,7 +171,7 @@ Dans votre projet réact, il faudra créer le provider et l'importer à la racin
 
   ```js
   import { useState } from 'react';
-  import { useAuth} from '../services/AuthProvider';
+  import { useAuth } from '../services/AuthProvider';
 
   function Login() {
 

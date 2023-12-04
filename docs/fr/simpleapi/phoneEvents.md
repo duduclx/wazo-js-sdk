@@ -17,6 +17,8 @@ Il s'agit des évènements directement liés à un appel audio.
 
 [filename](phoneEvents/onCallAccepted.md ':include')
 
+[filename](phoneEvents/onCallRejected.md ':include')
+
 
 ## media events
 
