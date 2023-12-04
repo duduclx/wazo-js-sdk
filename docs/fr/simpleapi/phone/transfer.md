@@ -13,7 +13,7 @@ Wazo.Phone.transfer(callSession, target)
   `callSession` : objet CallSession  
   correspond à l'appel reçu.
 
-  `target` : string
+  `target` : string  
   correspond au numéro de téléphone à qui transférer l'appel.
 
 - **Réponse**
@@ -34,13 +34,26 @@ Wazo.Phone.transfer(callSession, target)
 - **Exemple**
 
   ```js
-  const directTransfer = (callSession, target) => {
-    Wazo.Phone.transfer(callSession,target)
-    setCallSessions((prevCallSessions) => {
-      const newCallSessions = { ...prevCallSessions };
-      delete newCallSessions[callSession.getId()];
-      return newCallSessions;
-    });
+  import React, { useState } from "react";
+
+  export const myComponent = () => {
+    const [callSession, setCallSession] = useState({}); // contient l'appel actif
+    const [callSessions, setCallSessions] = useState({}); // contient l'ensemble des appels (en cours et disponible)
+    const [target, setTarget] = useState(""); // le numéro cible du transfert d'appel
+
+    const initializeWebRtc = async () => {
+        // connexion à la ligne SIP
+        await Wazo.Phone.connect({ audio: true, video: true });
+    };
+
+    const directTransfer = (callSession, target) => {
+      Wazo.Phone.transfer(callSession,target)
+      setCallSessions((prevCallSessions) => {
+        const newCallSessions = { ...prevCallSessions };
+        delete newCallSessions[callSession.getId()];
+        return newCallSessions;
+      });
+    }
   }
   ```
 
