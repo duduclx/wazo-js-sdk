@@ -1,6 +1,6 @@
 ## Se connecter en SIP
 
-Connect la ligne WebRtc de l'utilisateur et rend les appels possibles.
+Connecte la ligne WebRtc de l'utilisateur et rend les appels possibles.
 
 ```js
 Wazo.Phone.connect(rawOptions, sipLine);
