@@ -59,7 +59,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_INCOMING, OnIncomingCall);
         Wazo.Phone.on(Wazo.Phone.ON_CALL_INCOMING, onCallIncoming);
     }
 
-    const onCallIncoming = (callSession, withVideo) => {
+    const onCallIncoming = (callSession) => {
       // afficher le incomingCall
       setIncomingCall(true);
       // enregistre l'appel accepté dans callSession comme appel actif

@@ -13,7 +13,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ACCEPTED, onCallAccepted);
   L'event `ON_CALL_ACCEPTED` se déclenche lorsqu'un utilisateur accepte un appel entrant.
   
   ```js
-  Wazo.Phone.accept(callSession, withVideo);
+  Wazo.Phone.accept(callSession);
   ```
   Plus d'informations sur la page [Accepter un appel entrant](/fr/simpleapi/phone?id=accepter-un-appel-entrant)
 
@@ -27,7 +27,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ACCEPTED, onCallAccepted);
 
 - **Logique**
 
-  Il ne déclenche pas d'évènement.
+  Permet d'obtenir les informations à jour de `callSession`.
 
 - **Exemple**
 
@@ -47,7 +47,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ACCEPTED, onCallAccepted);
         Wazo.Phone.on(Wazo.Phone.ON_CALL_ACCEPTED, onCallAccepted);
     }
 
-    const onCallAccepted = (callSession, withVideo) => {
+    const onCallAccepted = (callSession) => {
       // enregistre l'appel accepté dans callSession comme appel actif
       setCallSession(callSession)
       // enregistre l'appel accepté dans callSessions comme appel disponible
