@@ -1,4 +1,4 @@
-### ON_CALL_ACCEPTED
+## ON_CALL_ACCEPTED
 
 L'event `ON_CALL_ACCEPTED` se déclenche lorsqu'un utilisateur accepte un appel entrant.
 

@@ -1,0 +1,1 @@
+## ON_CAMERA_RESUMED
