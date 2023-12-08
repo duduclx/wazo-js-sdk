@@ -2,6 +2,8 @@
 
 Liste des fonctions disponible dans `Wazo.Phone`.
 
+[filename](phone/_callSession.md ':include')
+
 [filename](phone/connect.md ':include')
 
 [filename](phone/call.md ':include')
