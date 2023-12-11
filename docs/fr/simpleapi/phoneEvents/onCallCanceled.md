@@ -16,7 +16,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_CANCELED, onCallCanceled);
 
   ```json
   {
-  "toto": "lerigolo"
+  
   }
   ```
 

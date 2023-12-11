@@ -38,3 +38,7 @@ Le callback renvoi un objet `data` contenant les informations liés à l'event.
 [filename](phoneEvents/onCallUnheld.md ':include')
 
 [filename](phoneEvents/onCallUnmuted.md ':include')
+
+[filename](phoneEvents/onCameraDisabled.md ':include')
+
+[filename](phoneEvents/onCameraResumed.md ':include')

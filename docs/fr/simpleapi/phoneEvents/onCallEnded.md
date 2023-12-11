@@ -18,15 +18,43 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ENDED, onCallEnded);
 
 - **Data**
 
-  ```json
+  ```js
   {
-    "toto": "lerigolo"
+  answered: true,
+  answeredBySystem: undefined,
+  answerTime: Date "date",
+  autoAnswer: false,
+  call: undefined,
+  callId: undefined,
+  callerNumber: undefined,
+  cameraEnabled: false,
+  conference: false,
+  creationTime: Date "date",
+  dialedExtension: "",
+  displayName: "prénom nom",
+  endTime: Date "date",
+  ignored: false,
+  isCaller: true,
+  muted: false,
+  number: "numéro",
+  paused: false,
+  recording: false,
+  recordingPaused: false,
+  ringing: false,
+  screensharing: false,
+  sipCallId: "id de l'appel Sip",
+  sipStatus: "Terminated",
+  startTime: Date "date",
+  type: "CallSession",
+  videoMuted: false,
+  videoRemotelyDowngraded: undefined,
   }
   ```
 
 - **Logique**
 
-  Permet d'obtenir les informations à jour de `callSession`.
+  Permet d'obtenir les informations à jour de `callSession`.  
+  L'appelant et l'appellé reçoivent l'event.
 
 - **Exemple**
 

@@ -14,9 +14,36 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_UNMUTED, onCallUnmuted);
 
 - **Data**
 
-  ```json
+  ```js
   {
-    "toto": "lerigolo"
+  answered: true,
+  answeredBySystem: undefined,
+  answerTime: Date "date",
+  autoAnswer: false,
+  call: undefined,
+  callId: "id du callSession",
+  callerNumber: undefined,
+  cameraEnabled: false,
+  conference: false,
+  creationTime: Date "date",
+  dialedExtension: "",
+  displayName: "prénom nom",
+  endTime: null,
+  ignored: false,
+  isCaller: true,
+  muted: false,
+  number: "numéro",
+  paused: false,
+  recording: false,
+  recordingPaused: false,
+  ringing: false,
+  screensharing: false,
+  sipCallId: "id de l'appel Sip",
+  sipStatus: "Established",
+  startTime: Date "date",
+  type: "CallSession",
+  videoMuted: false,
+  videoRemotelyDowngraded: undefined,
   }
   ```
 

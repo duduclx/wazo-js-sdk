@@ -14,15 +14,44 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_HELD, onCallHeld);
 
 - **Data**
 
-  ```json
+  ```js
   {
-    "toto": "lerigolo"
+  answered: true,
+  answeredBySystem: undefined,
+  answerTime: Date "date",
+  autoAnswer: false,
+  call: undefined,
+  callId: "id du callSession",
+  callerNumber: undefined,
+  cameraEnabled: false,
+  conference: false,
+  creationTime: Date "date",
+  dialedExtension: "",
+  displayName: "prénom nom",
+  endTime: null,
+  ignored: false,
+  isCaller: true,
+  muted: false,
+  number: "numéro",
+  paused: true,
+  recording: false,
+  recordingPaused: false,
+  ringing: false,
+  screensharing: false,
+  sipCallId: "id de l'appel Sip",
+  sipStatus: "Established",
+  startTime: Date "date",
+  type: "CallSession",
+  videoMuted: false,
+  videoRemotelyDowngraded: undefined,
   }
   ```
 
 - **Logique**
 
-  Permet d'obtenir les informations à jour de `callSession`.
+  Permet d'obtenir les informations à jour de `callSession`.  
+  Seul celui qui à mis en pause reçoit l'event.  
+  Pour l'autre personne, c'est directement le serveur qui lui joue la musique d'attente.
 
 - **Exemple**
 

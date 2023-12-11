@@ -21,7 +21,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_OUTGOING, onCallOutgoing);
 
   ```json
   {
-  "toto": "lerigolo"
+  
   }
   ```
 
