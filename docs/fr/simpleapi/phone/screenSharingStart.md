@@ -28,6 +28,29 @@ Wazo.Phone.startScreenSharing(constraints, callSession);
 
   `mediaStream` :  
   Il retourne le stream.
+  ```js
+  {
+    active: true,
+    id: "{86b04623-6221-4c89-ac16-a8d06c0ad50c}",
+    local: true,
+    onaddtrack: null,
+    onremovetrack: null
+    <prototype>: MediaStreamPrototype {
+      addTrack();
+      clone();
+      getAudioTrack();
+      getTrackById();
+      getTracks();
+      getVideoTracks();
+      removeTrack();
+      <prototype>: EventTargetPrototype {
+        addEventListener();
+        dispatchEvent();
+        removeEventListener();
+      }
+    }
+  }
+  ```
 
 - **Evènement**
 
@@ -49,16 +72,21 @@ Wazo.Phone.startScreenSharing(constraints, callSession);
     };
 
     const startScreenSharing = async (callSession) => {
-      // défini l'audio et la vidéo pour le partage
-      const options = { audio: true, video: true };
-      // lance le partage
-      const mediaStream = await Wazo.Phone.startScreenSharing(
-        options,
-        callSession
-      );
-      return mediaStream;
+      // Obtenir le MediaStream de l'écran avec les options spécifiées
+      const screenStream = await navigator.mediaDevices.getDisplayMedia({ audio: true, video: true });
+
+      // Obtenir le MediaStream de la fonction startScreenSharing de Wazo.Phone
+      const wazoStream = await Wazo.Phone.startScreenSharing({ audio: true, video: true }, callSession);
+
+      // Ajouter les pistes du screenStream à wazoStream
+      screenStream.getTracks().forEach(track => {
+        wazoStream.addTrack(track);
+      });
+
+      // Retourner le MediaStream combiné
+      return wazoStream;
     };
-  };
+
   ```
 
 </div>

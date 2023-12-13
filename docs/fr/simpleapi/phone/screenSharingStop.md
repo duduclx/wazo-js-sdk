@@ -3,7 +3,7 @@
 Permet d'arréter le partage de contenu lors d'un appel vidéo.
 
 ```js
-Wazo.Phone.stopScreenSharing(callSession);
+Wazo.Phone.stopScreenSharing(callSession, restoreLocalStream);
 ```
 
 <div class="useless-tab-container">
@@ -13,6 +13,8 @@ Wazo.Phone.stopScreenSharing(callSession);
   `callSession` : objet CallSession  
   correspond à l'appel en cours.
 
+  `restoreLocalStream` : boolean
+
 - **Réponse**
 
   `void` :  
@@ -21,8 +23,7 @@ Wazo.Phone.stopScreenSharing(callSession);
 - **Evènement**
 
   Il déclenche les evènements.  
-  ON_SHARE_SCREEN_ENDED  
-  ON_SHARE_SCREEN_ENDING  
+  ``ON_SHARE_SCREEN_ENDED``  
 
 - **Exemple**
 

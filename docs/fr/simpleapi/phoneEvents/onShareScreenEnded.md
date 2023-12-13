@@ -13,15 +13,13 @@ Wazo.Phone.on(Wazo.Phone.ON_SHARE_SCREEN_ENDED, onShareScreenEnded);
   L'event `ON_SHARE_SCREEN_ENDED` se déclenche lorsqu'un utilisateur arrète un partage d'écran.
   
   ```js
-  Wazo.Phone.stopScreenSharing()
+  Wazo.Phone.stopScreenSharing(callSession, restoreLocalStream)
   ```
 
 - **Data**
 
   ```js
-  {
-  
-  }
+  null // ne retourne rien
   ```
 
 - **Logique**
@@ -47,15 +45,8 @@ Wazo.Phone.on(Wazo.Phone.ON_SHARE_SCREEN_ENDED, onShareScreenEnded);
         Wazo.Phone.on(Wazo.Phone.ON_SHARE_SCREEN_ENDED, onShareScreenEnded);
     }
 
-    const onShareScreenEnded = (callSession) => {
-      // enregistre l'appel accepté dans callSession comme appel actif
-      setCallSession(callSession)
-      // enregistre l'appel accepté dans callSessions comme appel disponible
-      setCallSessions( (prevSessions) => (
-        { ...prevSessions,
-          [callSession.getId()]: callSession
-        }
-      ))
+    const onShareScreenEnded = () => {
+      // restaurer le local Stream et le wazo Stream
     }
   }
   ```

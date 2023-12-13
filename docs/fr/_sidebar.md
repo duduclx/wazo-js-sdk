@@ -3,6 +3,7 @@
 
 - Simple API
   - [Authentification](fr/simpleapi/auth.md)
+  - [CallSession](fr/simpleapi/callSession.md)
   - [Phone](fr/simpleapi/phone.md)
   - [Phone Events](fr/simpleapi/phoneEvents.md)
   - [Room](fr/simpleapi/room.md)

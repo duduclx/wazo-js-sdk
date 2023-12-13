@@ -10,23 +10,29 @@ mettre à jour les liens entre les fonctions et les events
 
 pensez aux websocket également, notamment on_call_created et on_call_updated
 
+# api / auth
+reprendre les fonctions !
 
+# phone
+reprendre le menu avec le nom des fonctions
+et faire toutes les fonctions disponibles dans _trashPhone.md !!
+
+# callSession
+revoir la mise en page et compléter !
+les propriétés callsession et callsession.call
+les méthodes
 
 # atxfer et conference
 
 - fournir un objet 
 - détailler l'exemple
 
-conférence quit
-Attention ! si on veut quitter que nous, il faut utiliser 
-adHocconference.phone.currentCallSession qui a son call : undefined
-et mettre son id à soi
-afin d'avoir le talkingtoids [0] = à son id !!
-
 
 ## phone events
 
 pour les ON_CALL définir la propriété qui change afin de faciliter la lecture du data !!
+
+ps: soucis sur le partage, mes exemples ne sont pas bon car je n'ai pas fini cette partie
 
 MESSAGE_TYPE_CHAT * supprimable
 MESSAGE_TYPE_SIGNAL * supprimable
@@ -62,16 +68,16 @@ ON_PROGRESS -
 ON_REGISTERED -
 ON_REINVITE
 ON_REMOVE_STREAM -
-ON_SHARE_SCREEN_ENDED -
-ON_SHARE_SCREEN_ENDING -
-ON_SHARE_SCREEN_STARTED -
+ON_SHARE_SCREEN_ENDED - en cours
+ON_SHARE_SCREEN_ENDING - ??
+ON_SHARE_SCREEN_STARTED - en cours
 ON_SIGNAL *
 ON_TERMINATE_SOUND *
 ON_TRACK -
 ON_UNREGISTERED -
 ON_USER_AGENT -
 ON_VIDEO_INPUT_CHANGE -
-ON_VIDEO_STREAM -
+ON_VIDEO_STREAM *
 
 # websocket
 
