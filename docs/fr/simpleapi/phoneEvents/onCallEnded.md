@@ -32,7 +32,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ENDED, onCallEnded);
   creationTime: Date "date",
   dialedExtension: "",
   displayName: "prénom nom",
-  endTime: Date "date",
+  endTime: Date "date", // !
   ignored: false,
   isCaller: true,
   muted: false,
@@ -43,7 +43,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ENDED, onCallEnded);
   ringing: false,
   screensharing: false,
   sipCallId: "id de l'appel Sip",
-  sipStatus: "Terminated",
+  sipStatus: "Terminated", // !
   startTime: Date "date",
   type: "CallSession",
   videoMuted: false,

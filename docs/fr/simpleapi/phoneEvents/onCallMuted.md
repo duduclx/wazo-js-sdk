@@ -31,7 +31,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_MUTED, onCallMuted);
   endTime: null,
   ignored: false,
   isCaller: true,
-  muted: true,
+  muted: true, // !
   number: "numéro",
   paused: false,
   recording: false,

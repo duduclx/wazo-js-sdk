@@ -27,21 +27,21 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_INCOMING, OnIncomingCall);
   {
   answerTime: null,
   answeredBySystem: undefined,
-  answered: false,
+  answered: false, // !
   autoAnswer: false,
   call: undefined,
   callId: undefined,
   callerNumber: undefined,
   cameraEnabled: false,
   conference: false,
-  creationTime: Date "date",
+  creationTime: Date "date", // !
   dialedExtension: "",
-  displayName: "prénom nom",
+  displayName: "prénom nom", // !
   endTime: null,
   ignored: false,
   isCaller: false,
   muted: false,
-  number: "numéro",
+  number: "numéro", // !
   paused: false,
   recording: false,
   recordingPaused: false,
@@ -49,8 +49,8 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_INCOMING, OnIncomingCall);
   screensharing: false,
   sipCallId: "id de l'appel Sip",
   sipSession: {} // objet complexe de la session Sip en cours,
-  sipStatus: "Initial",
-  startTime: Date "date",
+  sipStatus: "Initial", // !
+  startTime: Date "date", // !
   type: "CallSession",
   videoMuted: false,
   videoRemotelyDowngraded: undefined,

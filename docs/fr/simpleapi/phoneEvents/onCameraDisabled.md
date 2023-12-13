@@ -42,7 +42,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CAMERA_DISABLED, onCameraDisabled);
   sipStatus: "Established",
   startTime: Date "date",
   type: "CallSession",
-  videoMuted: true,
+  videoMuted: true, // !
   videoRemotelyDowngraded: undefined,
   }
   ```

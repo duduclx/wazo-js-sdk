@@ -7,7 +7,11 @@ Tous les évènements fonctionne avec un nom d'évènement et un callback
 Wazo.Phone.on(Wazo.Phone.EVENT, callback)
 ```
 
-Le callback renvoi un objet `data` contenant les informations liés à l'event.
+Le callback renvoi un objet `data` contenant les informations liées à l'event.
+
+[filename](phoneEvents/messageTypeChat.md ':include')
+
+[filename](phoneEvents/messageTypeSignal.md ':include')
 
 [filename](phoneEvents/onCallAccepted.md ':include')
 
@@ -42,3 +46,19 @@ Le callback renvoi un objet `data` contenant les informations liés à l'event.
 [filename](phoneEvents/onCameraDisabled.md ':include')
 
 [filename](phoneEvents/onCameraResumed.md ':include')
+
+[filename](phoneEvents/onChat.md ':include')
+
+[filename](phoneEvents/onMessage.md ':include')
+
+[filename](phoneEvents/onPlayHangupSound.md ':include')
+
+[filename](phoneEvents/onPlayInboundCallSignalSound.md ':include')
+
+[filename](phoneEvents/onPlayProgressSound.md ':include')
+
+[filename](phoneEvents/onPlayRingSound.md ':include')
+
+[filename](phoneEvents/onSignal.md ':include')
+
+[filename](phoneEvents/onTerminateSound.md ':include')

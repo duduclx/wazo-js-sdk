@@ -33,7 +33,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_RESUMED, onCallResumed);
   isCaller: true,
   muted: false,
   number: "numéro",
-  paused: false,
+  paused: false, // !
   recording: false,
   recordingPaused: false,
   ringing: false,

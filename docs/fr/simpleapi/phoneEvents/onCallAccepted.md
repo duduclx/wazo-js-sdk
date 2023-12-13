@@ -21,9 +21,9 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ACCEPTED, onCallAccepted);
 
   ```js
   {
-  answered: true,
+  answered: true, // !
   answeredBySystem: undefined,
-  answerTime: Date "date",
+  answerTime: Date "date", // !
   autoAnswer: false,
   call: undefined,
   callId: undefined,
@@ -44,7 +44,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ACCEPTED, onCallAccepted);
   ringing: false,
   screensharing: false,
   sipCallId: "id de l'appel Sip",
-  sipStatus: "Established",
+  sipStatus: "Established", // !
   startTime: Date "date",
   type: "CallSession",
   videoMuted: false,
