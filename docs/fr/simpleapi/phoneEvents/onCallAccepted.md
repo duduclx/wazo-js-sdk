@@ -15,7 +15,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CALL_ACCEPTED, onCallAccepted);
   ```js
   Wazo.Phone.accept(callSession);
   ```
-  Plus d'informations sur la page [Accepter un appel entrant](/fr/simpleapi/phone?id=accepter-un-appel-entrant)
+  Plus d'informations sur la page [Accept](/fr/simpleapi/phone/actions?id=accept)
 
 - **Data**
 

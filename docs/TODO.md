@@ -17,12 +17,15 @@ reprendre les fonctions !
 reprendre le menu avec le nom des fonctions
 et faire toutes les fonctions disponibles dans _trashPhone.md !!
 
+actions à faire:
+- reinvite
+
 # callSession
 revoir la mise en page et compléter !
 les propriétés callsession et callsession.call
 les méthodes
 
-# atxfer et conference
+# conference
 
 - fournir un objet 
 - détailler l'exemple

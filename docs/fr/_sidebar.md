@@ -1,10 +1,15 @@
 - Commencer
   - [Installation](fr/start/install.md)
 
+- CallSession
+  - [CallSession](fr/callsession/callSession.md)
+
 - Simple API
   - [Authentification](fr/simpleapi/auth.md)
-  - [CallSession](fr/simpleapi/callSession.md)
   - [Phone](fr/simpleapi/phone.md)
+    - [Actions](fr/simpleapi/phone/actions.md)
+    - [Checkers](fr/simpleapi/phone/checkers.md)
+    - [Getters](fr/simpleapi/phone/getters.md)
   - [Phone Events](fr/simpleapi/phoneEvents.md)
   - [Room](fr/simpleapi/room.md)
   - [Room Events](fr/simpleapi/roomEvents.md)
