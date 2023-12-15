@@ -1,4 +1,4 @@
-### startConference
+### startConference (adhoc)
 
 Permet de fusionner plusieurs appels en un appel unique.  
 Il sera nécessaire d'avoir les informations de l'appel dans `callSession.call`.  
@@ -75,7 +75,7 @@ adHocConference = await Wazo.Phone.startConference(callSession, participants);
 
 </div>
 
-#### Ajouter un participant (adhoc)
+#### addParticipant (adhoc)
 
 Permet d'ajouter un intervenant à partir d'un appel en cours.  
 Il sera nécessaire d'avoir les informations de l'appel dans `callSession.call`.  
@@ -126,7 +126,7 @@ adHocConference.addParticipant(participant);
 </div>
 
 
-#### Quitter une conférence (adhoc)
+#### RemoveParticipant (adhoc)
 
 Permet de quitter la conférence sans mettre fin à la conférence.  
 Il sera nécessaire d'avoir les informations de l'appel dans `callSession.call`.  
@@ -177,7 +177,7 @@ adHocConference.removeParticipant(callSession);
 
 </div>
 
-#### Terminer une conférence (adhoc)
+#### hangup (adhoc)
 
 Met fin à la conférence pour l'ensemble des participants.  
 Il sera nécessaire d'avoir les informations de l'appel dans `callSession.call`.  

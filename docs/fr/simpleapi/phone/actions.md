@@ -34,7 +34,11 @@
 
 [filename](actions/startConference.md ':include')
 
+[filename](actions/startNetworkMonitoring.md ':include')
+
 [filename](actions/startScreenSharing.md ':include')
+
+[filename](actions/stopNetworkMonitoring.md ':include')
 
 [filename](actions/stopScreenSharing.md ':include')
 

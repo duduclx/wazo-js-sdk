@@ -19,6 +19,8 @@ et faire toutes les fonctions disponibles dans _trashPhone.md !!
 
 actions à faire:
 - reinvite
+- startNetworkMonitoring
+- stopNetworkMonitoring
 
 # callSession
 revoir la mise en page et compléter !
@@ -26,10 +28,8 @@ les propriétés callsession et callsession.call
 les méthodes
 
 # conference
-
 - fournir un objet 
 - détailler l'exemple
-
 
 ## phone events
 
