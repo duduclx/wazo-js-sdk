@@ -28,8 +28,7 @@ Wazo.Phone.sendSignal(content);
 - **Evènement**
 
   Il déclenche l'évènement.  
-  `MESSAGE_TYPE_SIGNAL`  
-  et un autre ??
+  `ON_SIGNAL`  
 
 - **Exemple**
 
@@ -47,7 +46,7 @@ Wazo.Phone.sendSignal(content);
 
     const sendSignal = (message) => {
       // envoi le signal
-      Wazo.Phone.sendSignal({content: message});
+      Wazo.Phone.sendSignal(message);
     };
   };
   ```

@@ -38,7 +38,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CHAT, onChat);
   export const myComponent = () => {
     const [callSession, setCallSession] = useState({}); // contient l'appel actif
     const [callSessions, setCallSessions] = useState({}); // contient l'ensemble des appels (en cours et disponible)
-    const [chat, setChat] = useState([]); // tableau contenant l'ensemble des messages
+    const [chatMessage, setChatmessage] = useState([]); // tableau contenant les messages éphémères
 
     const initializeWebRtc = async () => {
       // connexion à la ligne SIP
@@ -49,7 +49,7 @@ Wazo.Phone.on(Wazo.Phone.ON_CHAT, onChat);
 
     const onChat = (message) => {
       // ajouter le message à afficher
-      setChat([...chat, message]);
+      setChatmessage(prevMessages => [...prevMessages, message])
     };
   };
   ```

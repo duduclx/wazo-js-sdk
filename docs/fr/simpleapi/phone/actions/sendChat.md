@@ -16,7 +16,11 @@ Wazo.Phone.sendChat(content);
 - **Paramètres**
 
   `content` : string  
-  le texte à envoyer.
+  le texte à envoyer.  
+  Cela peut être un objet, permettant ainsi de fournir plus d'informations, comme :  
+  le contenu du message  
+  la personne source  
+  la callSession concernée  
 
 - **Réponse**
 
@@ -26,8 +30,7 @@ Wazo.Phone.sendChat(content);
 - **Evènement**
 
   Il déclenche l'évènement.  
-  `MESSAGE_TYPE_CHAT`  
-  et un autre ??
+  `ON_CHAT`  
 
 - **Exemple**
 
@@ -37,6 +40,7 @@ Wazo.Phone.sendChat(content);
   export const myComponent = () => {
     const [callSession, setCallSession] = useState({}); // contient l'appel actif
     const [callSessions, setCallSessions] = useState({}); // contient l'ensemble des appels (en cours et disponible)
+    const [chatMessage, setChatmessage] = useState([]); // tableau contenant les messages éphémères
 
     const initializeWebRtc = async () => {
       // connexion à la ligne SIP
@@ -44,9 +48,29 @@ Wazo.Phone.sendChat(content);
     };
 
     const sendChat = (message) => {
+      // stock le message
+      setChatmessage(prevMessages => [...prevMessages, message])
       // envoi le message
-      Wazo.Phone.sendChat({content: message});
+      Wazo.Phone.sendChat(message);
     };
+    
+    // composant ui
+    const phoneChat = () => {
+      // les infos user et callSession
+      /* a importer ! */
+      // l'input du formulaire d'envoi de message
+      const [message, setMessage] = useState("");
+
+      // envoi d'un message avec des informations détaillées
+      const onSendChat = () => {
+        sendChat({
+          message: message,
+          user: user.profile.firstName + ' ' + user.profile.lastName,
+          uuid: user.uuid,
+          call: callSession.callId});
+        setMessage('')
+      }
+    }
   };
   ```
 
