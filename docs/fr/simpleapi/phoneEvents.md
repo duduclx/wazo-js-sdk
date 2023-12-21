@@ -62,3 +62,5 @@ Le callback renvoi un objet `data` contenant les informations liées à l'event.
 [filename](phoneEvents/onSignal.md ':include')
 
 [filename](phoneEvents/onTerminateSound.md ':include')
+
+[filename](phoneEvents/onVideoStream.md ':include')
